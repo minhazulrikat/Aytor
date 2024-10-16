@@ -14,6 +14,7 @@ import image5 from "../../images/product5.png";
 import image6 from "../../images/product6.png";
 import image7 from "../../images/product7.jpg";
 import image8 from "../../images/product8.jpg";
+import Rating from "../../images/Rating.png";
 
 
 const Product = () => {
@@ -52,6 +53,7 @@ const Product = () => {
             image2={image3}
             price={"$150.65"}
             text={"Lotion Shower gel"}
+            Rating = {Rating}
           />
         </SwiperSlide>
         <SwiperSlide>

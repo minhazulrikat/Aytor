@@ -5,7 +5,9 @@ import { FaCartPlus  } from "react-icons/fa";
 import { FaEye   } from "react-icons/fa";
 import { GiNetworkBars } from "react-icons/gi";
 
-const SubProduct = ({image,image2,price,text,Sale,SaleText}) => {
+
+
+const SubProduct = ({image,image2,price,text,Sale,SaleText,Rating}) => {
     return (
         <>
              <div className="ProductCard text-center d-flex flex-column align-items-center">
@@ -36,7 +38,12 @@ const SubProduct = ({image,image2,price,text,Sale,SaleText}) => {
             <p className='my-4'>{price}</p>
             <h5>{text}</h5>
             <span>
-              <img src="/src/assets/images/Rating.png" alt="" />
+            &#9733;
+            &#9733;
+            &#9733;
+            &#9733;
+            &#9733;
+              {/* <img src={Rating} alt="" /> */}
             </span>
           </div>
         </>
