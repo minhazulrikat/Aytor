@@ -1,0 +1,40 @@
+.DealsCard {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 485px;
+  padding-left: 40px;
+  p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    max-width: 350px;
+    padding: 16px 0 19px 0;
+  }
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+  }
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-color);   
+  }
+}

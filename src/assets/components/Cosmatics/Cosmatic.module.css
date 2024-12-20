@@ -1,0 +1,38 @@
+.cosmatic {
+  background-image: url("../../images/cosmatic.png");
+  width: 100%;
+  height: 524px;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cosmaticBtn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--comon-colot);
+  border: 1px solid var(--comon-colot);
+  width: 180px;
+  height: 56px;
+}
+
+.cosmatic h2{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 128%;
+color: var(--comon-colot);
+max-width: 375px;
+}
+.cosmatic p{
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: var(--comon-colot);
+max-width: 420px;
+padding-top: 10px;
+padding-bottom: 30px;
+}

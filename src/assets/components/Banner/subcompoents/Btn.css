@@ -12,9 +12,28 @@
   border: none;
   margin-top: 29px;
 }
-.swiper-pagination-bullet-active-main {
-  background: var(--st-primary-color);
+.bannerBtn {
+  background-color: var(--st-primary-color);
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
   border-radius: 5px;
-  width: 28px;
-  height: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+
+.bannerBtn:hover {
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.bannerBtn:active {
+  transform: translateY(0); /* Reset on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
 }

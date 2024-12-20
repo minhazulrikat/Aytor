@@ -1,16 +1,14 @@
 import React from "react";
-import "./Banner.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 // import required modules
 import { Autoplay , Pagination } from "swiper/modules";
 import Btn from "./subcompoents/Btn";
+import "./Banner.css";
 
 const Banner = () => {
   return (
@@ -25,6 +23,7 @@ const Banner = () => {
             disableOnInteraction: false,
           }}
         className="mySwiper"
+        id="BannerSwiper"
      
       >
         <SwiperSlide>

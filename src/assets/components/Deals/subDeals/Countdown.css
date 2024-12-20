@@ -1,0 +1,93 @@
+.DealsSection {
+  position: relative;
+}
+
+.CountDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  width: 424px;
+  height: 70px;
+  max-width: 100vw;
+  box-shadow: 0 0 10px 0 rgba(21, 26, 50, 0.1);
+  background: var(--common-color);
+  position: absolute;
+  top: 101px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px 50px;
+}
+
+.CountDiv p {
+  font-family: var(--font-family);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 142%;
+  color: var(--text-color);
+}
+
+.CountDiv p span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: var(--paragraph-color);
+}
+
+.timer-separator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 15px;
+}
+
+.timer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff6666;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .CountDiv {
+    width: 90%; /* Make the CountDiv take up more width on smaller screens */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    top: 80px; /* Adjust top position if needed */
+  }
+
+  .CountDiv p {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  .CountDiv p span {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .CountDiv {
+    flex-direction: row; /* Stack items vertically on very small screens */
+    align-items: center; /* Center align items */
+    padding: 15px; /* Adjust padding for very small screens */
+  }
+
+  .CountDiv p {
+    font-size: 18px; /* Further decrease font size */
+  }
+
+  .CountDiv p span {
+    font-size: 12px; /* Further decrease font size */
+  }
+
+  .timer-separator {
+    gap: 5px; /* Reduce gap between timer dots */
+  }
+}

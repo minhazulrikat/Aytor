@@ -1,0 +1,148 @@
+.Beauty {
+  background: var(--bg);
+  overflow-x: hidden;
+  min-height: 517px;
+  position: relative;
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    padding-top: 115px;
+  }
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+    padding: 16px 0;
+    max-width: 412px;
+  }
+  p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    padding-bottom: 30px;
+    max-width: 417px;
+  }
+  .Beauty-Video {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #Beauty {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+    gap: 20px;
+  }
+
+  #Beauty h4 {
+    padding-top: 20px;
+  }
+
+  #Beauty h2 {
+    font-size: 24px;
+    max-width: 100%;
+ 
+  }
+
+  #Beauty p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  #Beauty .container {
+    width: 100%;
+  }
+
+  .Video {
+    width: 100%;   
+    object-fit: cover;
+    display: block;
+  }
+
+  #Beauty-Video {
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 0;
+    display: block;   
+  }
+}
+
+#BeautyBtn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--comon-colot);
+  width: 180px;
+  height: 57px;
+  background: #ff6f61;
+  border: none;
+}
+.Beauty .PlayButton {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PlayButton {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition */
+}
+.PlayButton:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* Scale up the button */
+  background-color: rgba(255, 255, 255, 1); /* Change background color */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.5); /* Scale up shadow */
+}
+
+.PlayButton::before {
+  content: "";
+  position: absolute;
+  border: 15px solid white;
+  border-radius: 50%;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  animation: bloom1 0.9s linear infinite;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+@keyframes bloom1 {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

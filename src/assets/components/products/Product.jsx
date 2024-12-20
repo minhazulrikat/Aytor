@@ -20,7 +20,7 @@ import Rating from "../../images/Rating.png";
 const Product = () => {
   return (
     <div className="container mb-5">
-      <h2 className="text-center my-4">New Arrivals Products</h2>
+      <h1 className="text-center my-4">New Arrivals Products</h1>
       <Swiper
         navigation={true}
         slidesPerView={1}

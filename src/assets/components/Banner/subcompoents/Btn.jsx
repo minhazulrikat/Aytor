@@ -6,7 +6,7 @@ import "./Btn.css"
 const Btn = () => {
     return (
         <div>
-            <button className='bannerBtn'>Shop Now <HiOutlineArrowNarrowRight/></button>
+            <button className={`${'bannerBtn'}`} > Shop Now <HiOutlineArrowNarrowRight/></button>
         </div>
     );
 };

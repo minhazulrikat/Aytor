@@ -32,3 +32,49 @@ h6 {
 body {
   font-family: var(--font-family);
 }
+#cosmaticBtn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--comon-colot);
+  border: 1px solid var(--comon-colot);
+  background: transparent;
+  width: 180px;
+  height: 56px;
+}
+#ProductBtn {
+  width: 200px;
+  height: 56px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: var(--comon-colot);
+  background: var(--st-primary-color);
+  border: none;
+}
+#DealsBtn {
+  width: 160px;
+  height: 56px;
+  background: var(--rd-primary-color);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: var(--comon-colot);
+  border: none;
+  display: block;
+  margin-top: 30px;
+}
+h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 128%;
+  text-align: center;
+  color: var(--text-color);
+}

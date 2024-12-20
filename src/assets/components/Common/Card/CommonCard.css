@@ -1,0 +1,53 @@
+.Sale {
+    display: inline-block;
+    position: absolute;
+    background-color: var(--nd-primary-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--comon-colot);
+    transform: rotate(270deg);
+    width: 50px;
+    height: 26px;
+    z-index: 3;
+    top: 8px;
+    left: 30px;
+    border-radius: 50px 0% 0% 50px;
+  }
+  .hoverIcon{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%) translateX(100%);
+      visibility: hidden;
+      z-index: 0;
+      opacity: 0;
+      transition: all .5s;
+  }
+  .hoverIcon span{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+     background: white;
+     z-index: 5;
+     cursor: pointer;
+  }
+  .ProductCard:hover .hoverIcon{
+      transform: translateY(-50%) translateX(0);
+      visibility: visible;
+      z-index: 4;
+      opacity: 1;
+      transition: all .5s;
+  }
+  .hoverIcon span:hover{
+      background-color: var(--nd-primary-color);
+      color: white;
+  }
+  

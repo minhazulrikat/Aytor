@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #1c1e21;
+  padding: 40px 20px;
+  color: #bbb;
+  position: relative;
+  margin-top: 170px;
+}
+
+.footer-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  /* line-height: 2; */
+  color: #bbb;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--comon-colot);
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s ease;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--comon-colot);
+}
+
+.footer-links li a:hover {
+  color: #e74c3c;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  color: #e74c3c;
+  margin-right: 10px;
+}
+
+.newsletter input {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.footer-description {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--comon-colot);
+}
+.newsletter button:hover {
+  background-color: #c0392b;
+}
+.HrLine {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 70px;
+}
+.social-icons {
+  .s-icon {
+    width: 44px;
+    height: 40px;
+    background: var(--comon-colot);
+    transition: all 0.3s ease;
+  }
+  .SocialIcon {
+    transition: all 0.3s ease;
+    color: black;
+  }
+}
+
+.s-icon:hover .SocialIcon {
+  color: white;
+}
+.s-icon:hover {
+  background: var(--st-primary-color);
+}
+
+
+ .shipingSection {
+  padding: 30px 41px;
+  position: absolute;
+  top: -116px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.ShipingCard {
+  .ShipingText {
+    h4 {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--text-color);
+    }
+    p {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 175%;
+      color: var(--paragraph-color);
+
+      .price-tag {
+        color: var(--st-primary-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+
+.bestSell {
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .BestSellImage{
+    background: var(--bg);
+  }
+}
+
+.bestSell{
+  .ProductCard .hoverIcon{
+    transform: translateY(-50%) translateX(200%) !important;
+  }
+  .ProductCard:hover .hoverIcon{
+    transform: translateY(-50%) translateX(20%) !important;
+    visibility: visible;
+    z-index: 4;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+.cardImage{
+  background: var(--bg);
+  width: 100%;
+  .primaryImage {
+    z-index: 0 !important;
+  }
+}
+.row{
+  margin-top: 20px;
+}
+
+
+}
